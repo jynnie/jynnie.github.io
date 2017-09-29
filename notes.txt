@@ -1,0 +1,3 @@
+[ ] Redesign the site in nodejs
+[ ] Use database to read works in
+[ ] Scrollbar

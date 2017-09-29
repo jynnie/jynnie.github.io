@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+
+    <style>
+        #body{
+            clear: both;
+            height:100%;
+        }
+
+        #columns {
+            column-width: 220px;
+            column-gap: 15px;
+            width: 100%;
+            column-fill: auto;
+        }
+
+        #columns figure {
+            margin: 0;
+            padding: 7px;
+            padding-bottom: 10px;
+            transition: opacity .4s ease-in-out;
+            display: inline-block;
+            break-inside: avoid;
+        }
+
+        #columns figure img {
+            width: 100%; height: auto;
+            padding-bottom: 15px;
+            margin-bottom: 5px;
+        }
+
+        #columns:hover figure:not(:hover) {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <div id="columns">
+            <figure>
+                <img src="Gallery/Labryinth.jpg" alt="The Labryinth">
+                <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/Labryinth.jpg" alt="The Labryinth">
+                <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/Labryinth.jpg" alt="The Labryinth">
+                <figcaption>Belle, based on 1770’s French court fashion</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/Portrait.jpg" alt="Portrait">
+                <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/2E.png" alt="2E">
+                <figcaption>Sleeping Beauty, based on European fashions in 1485</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/2E.png" alt="2E">
+                <figcaption>Pocahontas based on 17th century Powhatan costume</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/Portrait.jpg" alt="Portrait">
+                <figcaption>Snow White, based on 16th century German fashion</figcaption>
+            </figure>	
+
+            <figure>
+                <img src="Gallery/Portrait.jpg" alt="Portrait">
+                <figcaption>Ariel wearing an evening gown of the 1890’s</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Gallery/Portrait.jpg" alt="Portrait">
+                <figcaption>Tiana wearing the <i>robe de style</i> of the 1920’s</figcaption>
+            </figure>	
+        </div>
+    </div>
+</body>
+</html>
