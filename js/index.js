@@ -1,43 +1,36 @@
+var GALLERY = undefined;
+
 window.onload = function() {
-  bodyLoad();
+  // bodyLoad();
 
-  document.body.addEventListener('scroll', function(){
-    bodyLoad();
-  });
-}
+  // document.body.addEventListener('scroll', function(){
+  //   bodyLoad();
+  // });
 
-function bodyLoad(){
-  var spot = document.body.scrollTop;
-  var bod = document.body;
-  var nav = document.getElementById('navbar');
-  var white = '#FFFFFF';
-  var hack = '#67CAE5';
-  var syncc = '#1ABC9C';
-  var dos = '#CB5864';
-  var art = '#E9B000';
-  var classes = '#6E3667';
+  GALLERY = document.getElementById("gallery");
+};
 
-  if (spot > 450){
-    bod.style.background = hack;
-    nav.classList.add('light');
-
-    if (spot > 1160){
-      bod.style.background = syncc;
-
-      if (spot > 1900){
-        bod.style.background = dos;
-
-        if (spot > 2510){
-          bod.style.background = art;
-
-          if (spot > 3220){
-            bod.style.background = classes;
-          }
-        }
-      }
-    }
-  } else {
-    bod.style.background = white;
-    nav.classList.remove('light');
+function workFilter(category) {
+  for (var f of ["all", "design", "writing", "software", "art"]) {
+    GALLERY.classList.remove(f);
+    document.getElementById("f-" + f).classList.remove("selected");
   }
+
+  GALLERY.classList.add(category);
+  document.getElementById("f-" + category).classList.add("selected");
 }
+
+/** Legacy code from design in Dec 2017 */
+// function bodyLoad(){
+//   var spot = document.body.scrollTop;
+//   var bod = document.body;
+//   var nav = document.getElementById('navbar');
+//   var vh = window.innerHeight;
+//
+//   if (spot > .5 * vh){
+//     nav.classList.add('light');
+//   } else {
+//     bod.style.background = white;
+//     nav.classList.remove('light');
+//   }
+// }
