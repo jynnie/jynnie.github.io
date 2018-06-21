@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Arvo");
+::-moz-selection {
+  color: white;
+  background: #66d0d5; }
+
+::selection {
+  color: white;
+  background: #66d0d5; }
+
+body,
+p {
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #919191; }
+
+h1 {
+  font-family: "Arvo";
+  font-size: 4em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #f9686a; }
+
+h2 {
+  font-family: "Open Sans";
+  font-size: 1.6em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  margin-top: 0; }
+  h2 span {
+    background: #66d0d5;
+    font-family: "Arvo";
+    letter-spacing: normal;
+    font-weight: normal;
+    color: white;
+    padding: 5px 12px; }
+
+h3 {
+  font-family: "Arvo";
+  font-size: 1.3em;
+  font-weight: lighter; }
+
+a {
+  color: #575757;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: color 0.1s; }
+  a:hover {
+    color: #66d0d5; }
+
+br {
+  content: "";
+  margin: 0.6em 0;
+  display: block; }
+
+body {
+  margin: 0; }
+
+body {
+  background-color: white;
+  overflow-y: auto; }
+
+html {
+  animation: fadeIn 1s ease-in-out forwards; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.line {
+  margin-left: 3em; }
+  .line::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #fcc72e;
+    transform: translate(-3em, 0.5em); }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12vw;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.8); }
+  .nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: max-content;
+    -webkit-margin-before: 1.6em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px; }
+  .nav li a {
+    color: rgba(145, 145, 145, 0.6);
+    text-decoration: none;
+    transition: color 0.3s;
+    border: none; }
+    .nav li a:hover {
+      color: #f9686a; }
+  .nav li + li {
+    margin-left: 20px; }
+  .nav.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; }
+
+@media screen and (max-width: 548px) {
+  .nav {
+    padding: 0 14px; } }
+
+svg {
+  max-width: 640px; }
+  svg .cls-1 {
+    fill: #ccd6db; }
+  svg .cls-1,
+  svg .cls-2 {
+    font-size: 120px;
+    font-family: Arvo;
+    font-weight: 600; }
+  svg .cls-3 {
+    fill: #66d0d5;
+    width: 36px;
+    height: 154px;
+    rx: 18px;
+    ry: 18px;
+    animation: bob-mid 2s ease-in-out infinite; }
+  svg .cls-3:nth-child(3n + 0) {
+    animation-name: bob-low; }
+  svg .cls-3:nth-child(4n + 2) {
+    animation-delay: -1.2s; }
+  svg .cls-3:nth-child(5n + 1) {
+    animation-name: bob-high; }
+  svg .cls-3:nth-child(3n + 4) {
+    animation-duration: 1.6s; }
+
+@keyframes bob-mid {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(70px); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes bob-high {
+  from {
+    transform: translateY(-10px); }
+  50% {
+    transform: translateY(50px); }
+  to {
+    transform: translateY(-10px); } }
+
+@keyframes bob-low {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(50px); }
+  to {
+    transform: translateY(0); } }
+
+.section {
+  position: relative;
+  padding: 0 12vw; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  color: #919191;
+  font-size: 0.8em;
+  padding: 0 12vw; }
+  footer a {
+    height: fit-content;
+    padding-bottom: 2px;
+    cursor: pointer; }
+
+#about.section {
+  padding-bottom: 70px; }
+
+#about h1 {
+  font-weight: 600; }
+
+#about h2 {
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+  color: #575757;
+  background: none;
+  padding: 0; }
+
+#about .content {
+  padding: 12vh 0 0;
+  max-width: 750px; }
+
+#about ul {
+  list-style: none;
+  padding-left: 1em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 1em; }
+
+#about li + li {
+  margin-top: 3px; }
+
+@keyframes bob {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(0.5em); }
+  100% {
+    transform: translateY(0); } }
+
+@media screen and (max-width: 472px) {
+  #about h1 {
+    font-size: 3em; }
+  #about h2 {
+    font-size: 1.2em; }
+  #about .wrapper {
+    padding: 0; } }
+
+#projects {
+  position: relative;
+  padding-top: 60px; }
+  #projects .header {
+    position: relative;
+    height: 360px;
+    margin-bottom: 1.5em; }
+    #projects .header svg {
+      position: absolute;
+      right: 0; }
+    #projects .header .bottom-wrapper {
+      position: absolute;
+      bottom: 0; }
+  #projects .filters {
+    margin-bottom: 0.6em; }
+    #projects .filters button {
+      border: none;
+      padding-bottom: 5px;
+      outline: none !important;
+      font-family: "Open Sans";
+      font-size: 12px;
+      color: #919191;
+      background: none;
+      cursor: pointer;
+      transition: border 0.2s; }
+      #projects .filters button:hover {
+        border-bottom: 1px solid #fcc72e; }
+      #projects .filters button.selected {
+        border-bottom: 3px solid #fcc72e; }
+      #projects .filters button button + button {
+        margin-left: 10px; }
+
+#descript {
+  margin-bottom: 27px; }
+
+#gallery {
+  column-count: 4;
+  column-gap: 20px; }
+  #gallery .project {
+    break-inside: avoid;
+    margin: 0;
+    margin-bottom: 24px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s, display 0.2s 0.2s; }
+    #gallery .project .preview {
+      width: 100%;
+      min-height: 100px;
+      display: block;
+      transition: filter 0.2s; }
+    #gallery .project a.preview {
+      cursor: pointer; }
+    #gallery .project .details {
+      padding: 10px 0;
+      border-top: none; }
+    #gallery .project .name {
+      font-size: 1.1em; }
+    #gallery .project .meta {
+      margin-bottom: 2px; }
+      #gallery .project .meta .tag {
+        display: inline;
+        width: fit-content;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-right: 8px;
+        opacity: 0.9; }
+    #gallery .project .links {
+      margin-top: 4px;
+      display: flex; }
+      #gallery .project .links a {
+        font-size: 12px;
+        margin-right: 8px; }
+      #gallery .project .links a:hover {
+        color: #f9686a; }
+  #gallery.all .project {
+    display: block;
+    opacity: 1; }
+  #gallery.design .project.design {
+    display: block;
+    opacity: 1; }
+  #gallery.writing .project.writing {
+    display: block;
+    opacity: 1; }
+  #gallery.software .project.software {
+    display: block;
+    opacity: 1; }
+  #gallery.art .project.art {
+    display: block;
+    opacity: 1; }
+
+@media screen and (max-width: 950px) {
+  #work .details {
+    right: 10vw; }
+  #gallery {
+    column-count: 3; } }
+
+@media screen and (max-width: 680px) {
+  #gallery {
+    column-count: 2; } }
+
+#gallery {
+  position: relative; }
+  #gallery .content {
+    position: absolute;
+    left: 55vw;
+    top: 30vh; }
+    #gallery .content h2, #gallery .content p, #gallery .content a {
+      color: white; }
+  #gallery .frame {
+    position: absolute;
+    top: calc(50vh - (500px / 2));
+    right: calc(75vw - (500px / 2));
+    min-width: 500px;
+    width: 30vw;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px; }
+    #gallery .frame .art {
+      max-width: calc(500px / 3);
+      max-height: calc(500px / 3);
+      background-size: cover !important; }
+
+#classes {
+  margin-bottom: 10vh;
+  padding-top: 50px; }
+  #classes h2,
+  #classes h3,
+  #classes li,
+  #classes a {
+    color: #919191; }
+  #classes h2 {
+    color: #ccd6db;
+    font-family: "Arvo";
+    letter-spacing: normal;
+    font-size: 120px;
+    margin-bottom: 30px;
+    font-weight: 600; }
+  #classes .semester {
+    display: flex; }
+    #classes .semester .title {
+      font-family: "Open Sans";
+      color: #f9686a;
+      width: 150px; }
+    #classes .semester ul {
+      list-style-type: none; }
+
+@media screen and (max-width: 805px) {
+  #classes .semester {
+    display: block; }
+  #classes ul {
+    -webkit-padding-start: 0;
+    padding-left: 0; }
+  #classes h2 {
+    font-size: 3.2em; } }
