@@ -128,15 +128,17 @@ svg {
     height: 154px;
     rx: 18px;
     ry: 18px;
-    animation: bob-mid 2s ease-in-out infinite; }
+    animation: bob-mid 1s ease-in-out infinite; }
   svg .cls-3:nth-child(3n + 0) {
     animation-name: bob-low; }
   svg .cls-3:nth-child(4n + 2) {
-    animation-delay: -1.2s; }
+    animation-delay: -0.4s; }
+  svg .cls-3:nth-child(6n - 1) {
+    animation-delay: -0.6s; }
   svg .cls-3:nth-child(5n + 1) {
     animation-name: bob-high; }
   svg .cls-3:nth-child(3n + 4) {
-    animation-duration: 1.6s; }
+    animation-duration: 0.8s; }
 
 @keyframes bob-mid {
   from {
