@@ -1,2 +1,0 @@
-[X] Redesign the site in nodejs
-[ ] Scrollbar

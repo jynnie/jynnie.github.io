@@ -11,7 +11,7 @@ window.onload = function() {
 };
 
 function workFilter(category) {
-  for (var f of ["all", "design", "writing", "software", "art"]) {
+  for (var f of ["all", "design", "writing", "software"]) {
     GALLERY.classList.remove(f);
     document.getElementById("f-" + f).classList.remove("selected");
   }
