@@ -55,6 +55,10 @@ br {
 body {
   margin: 0; }
 
+@media screen and (max-width: 472px) {
+  h1 {
+    font-size: 3em; } }
+
 body {
   background-color: white;
   overflow-y: auto; }
@@ -256,9 +260,15 @@ footer {
   #about h2 {
     font-size: 1.3em; } }
 
-@media screen and (max-width: 472px) {
+@media screen and (max-width: 707px) {
   #about h1 {
-    font-size: 2.4em; }
+    font-size: 3em; }
+  #about h2 {
+    font-size: 1.3em; } }
+
+@media screen and (max-width: 530px) {
+  #about h1 {
+    font-size: 2.1em; }
   #about h2 {
     font-size: 1.2em; }
   #about .wrapper {
@@ -359,6 +369,24 @@ footer {
 #gallery.art .project.art {
   display: grid;
   opacity: 1; }
+
+.writeup p {
+  max-width: 700px; }
+
+.writeup img {
+  width: 100%;
+  max-width: 700px; }
+
+.writeup .flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px; }
+  .writeup .flex .img + .img {
+    margin-left: 5px; }
+  .writeup .flex .img img {
+    max-width: 100%;
+    width: unset; }
 
 @media screen and (max-width: 680px) {
   #gallery .project {
