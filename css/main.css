@@ -13,6 +13,10 @@ p {
   font-weight: 300;
   color: #575757; }
 
+.about,
+p {
+  line-height: 1.55em; }
+
 h1 {
   font-family: "IBM Plex Serif";
   font-size: 4.5em;
@@ -281,7 +285,7 @@ footer {
   padding-top: 60px; }
   #projects .header {
     position: relative;
-    margin-bottom: 3em; }
+    margin-bottom: 3.6em; }
   #projects .filters {
     margin-bottom: 0.6em; }
     #projects .filters button {
@@ -310,7 +314,7 @@ footer {
   grid-template-columns: 160px 1fr;
   grid-gap: 32px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 2.4em;
   display: none;
   opacity: 0;
   transition: opacity 0.2s, display 0.2s 0.2s; }
@@ -370,12 +374,23 @@ footer {
   display: grid;
   opacity: 1; }
 
+.writeup h2 {
+  margin-top: 1.5em; }
+
 .writeup p {
   max-width: 700px; }
+  .writeup p.quote {
+    padding-left: 1.2em;
+    border-left: 4px #ccd6db solid; }
 
 .writeup img {
   width: 100%;
   max-width: 700px; }
+  .writeup img.mockup {
+    --b-width: 1em;
+    border: var(--b-width) #ccd6db solid;
+    width: calc(100% - var(--b-width) * 2);
+    max-width: calc(700px - var(--b-width) * 2); }
 
 .writeup .flex {
   display: flex;
@@ -464,6 +479,8 @@ footer {
   #art .piece img {
     max-height: 80vh;
     max-width: 76vw; }
+    #art .piece img.bordered {
+      border: 2px #ccd6db solid; }
   #art .piece .title {
     padding-left: 20px;
     font-family: "IBM Plex Serif";
