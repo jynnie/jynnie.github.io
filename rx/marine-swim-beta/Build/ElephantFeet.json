@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "Marine Swim",
-"dataUrl": "Elephant.data.unityweb",
-"wasmCodeUrl": "Elephant.wasm.code.unityweb",
-"wasmFrameworkUrl": "Elephant.wasm.framework.unityweb",
+"dataUrl": "ElephantFeet.data.unityweb",
+"wasmCodeUrl": "ElephantFeet.wasm.code.unityweb",
+"wasmFrameworkUrl": "ElephantFeet.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
