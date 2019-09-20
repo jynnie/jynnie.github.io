@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aa5c4ed1.chunk.css",
+    "main.js": "/static/js/main.b431a9d9.chunk.js",
+    "main.js.map": "/static/js/main.b431a9d9.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.dce780dc.js",
+    "runtime~main.js.map": "/static/js/runtime~main.dce780dc.js.map",
+    "static/js/2.a6de7931.chunk.js": "/static/js/2.a6de7931.chunk.js",
+    "static/js/2.a6de7931.chunk.js.map": "/static/js/2.a6de7931.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9cabc3602b5af46e79b0f5645f403dc0.js": "/precache-manifest.9cabc3602b5af46e79b0f5645f403dc0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.aa5c4ed1.chunk.css.map": "/static/css/main.aa5c4ed1.chunk.css.map",
+    "static/media/2E.png": "/static/media/2E.f1775318.png",
+    "static/media/BeforeBlood.png": "/static/media/BeforeBlood.38269352.png",
+    "static/media/DoS.png": "/static/media/DoS.5f929478.png",
+    "static/media/HackLogo.png": "/static/media/HackLogo.7c8914db.png",
+    "static/media/PlixBit.png": "/static/media/PlixBit.56c1f315.png",
+    "static/media/Sigchain.png": "/static/media/Sigchain.3e861017.png",
+    "static/media/alight-clip.gif": "/static/media/alight-clip.849ef871.gif",
+    "static/media/cityneon.gif": "/static/media/cityneon.23ad46b0.gif",
+    "static/media/labyrinth-box.jpg": "/static/media/labyrinth-box.cac59dcc.jpg",
+    "static/media/onionvale.png": "/static/media/onionvale.bf66c5ee.png",
+    "static/media/spectre.gif": "/static/media/spectre.87f15b3e.gif",
+    "static/media/summoner.png": "/static/media/summoner.3dfc907b.png"
+  }
+}
