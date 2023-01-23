@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | flowers in a long grey winter</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+    <h1>flowers in a long grey winter (alpha demo)</h1>
+    <a
+      href="https://jynngerlabs.notion.site/flowers-in-a-long-grey-winter-e7ee4b2990a64dbeb8b9e9740933e61b"
+      target="_blank"
+      >Written Instructions</a
+    >
+    <div
+      id="unity-container"
+      class="unity-desktop"
+      style="
+        margin-top: 36px;
+        position: relative;
+        transform: none;
+        left: unset;
+        top: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <canvas id="unity-canvas" width="960" height="600"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
+      <div id="unity-warning"></div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
@@ -39,15 +59,18 @@
       // user.
       function unityShowBanner(msg, type) {
         function updateBannerVisibility() {
-          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+          warningBanner.style.display = warningBanner.children.length
+            ? "block"
+            : "none";
         }
-        var div = document.createElement('div');
+        var div = document.createElement("div");
         div.innerHTML = msg;
         warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        if (type == "error") div.style = "background: red; padding: 10px;";
         else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
+          if (type == "warning")
+            div.style = "background: yellow; padding: 10px;";
+          setTimeout(function () {
             warningBanner.removeChild(div);
             updateBannerVisibility();
           }, 5000);
@@ -56,11 +79,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/CooldownDemo-Jan9 (WebDev).loader.js";
+      var loaderUrl = buildUrl + "/BetaDemo-Jan222023 (Web).loader.js";
       var config = {
-        dataUrl: buildUrl + "/CooldownDemo-Jan9 (WebDev).data",
-        frameworkUrl: buildUrl + "/CooldownDemo-Jan9 (WebDev).framework.js",
-        codeUrl: buildUrl + "/CooldownDemo-Jan9 (WebDev).wasm",
+        dataUrl: buildUrl + "/BetaDemo-Jan222023 (Web).data",
+        frameworkUrl: buildUrl + "/BetaDemo-Jan222023 (Web).framework.js",
+        codeUrl: buildUrl + "/BetaDemo-Jan222023 (Web).wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "flowers in a long grey winter",
@@ -80,7 +103,7 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner("WebGL builds are not supported on mobile devices.");
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
@@ -92,14 +115,16 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
+        })
+          .then((unityInstance) => {
+            loadingBar.style.display = "none";
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          })
+          .catch((message) => {
+            alert(message);
+          });
       };
       document.body.appendChild(script);
     </script>
